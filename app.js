@@ -2,7 +2,6 @@
 const buttons = document.querySelectorAll('Button');
 // winningCases: [[0,1,2], [3,4,5], [6,7,8], [0,3,6], [1,4,7], [2,5,8], [0,4,8], [2,4,6]];
 const players = ['playerX', 'playerO'];
-let winner = false;
 let currentPlayer = players[0];
 let counterX = 0;
 let counterO = 0;
@@ -57,7 +56,6 @@ const checkWinning = (aClass) => {
       buttons[4].innerText === aClass &&
       buttons[6].innerText === aClass)
   ) {
-    winner = true;
     document.getElementById('print').innerText =
       'The winner is ' + currentPlayer;
     document.getElementById('turn').innerText = 'Game Over!!';
@@ -77,7 +75,7 @@ const checkWinning = (aClass) => {
   let totalClicks =
     document.querySelectorAll('.X').length +
     document.querySelectorAll('.O').length;
-  if (totalClicks === 9 && !winner) {
+  if (totalClicks >= 9) {
     counterTie++;
     document.getElementById('tie').innerText = `${counterTie}`;
     document.getElementById('print').innerText = 'It is a tie!';
