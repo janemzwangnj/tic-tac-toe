@@ -1,0 +1,76 @@
+#main {
+  text-align: center;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+h1 {
+  color: orangered;
+  font-size: 30px;
+}
+
+#container {
+  align-self: center;
+  margin: 0 auto;
+  padding: 15px;
+  width: 240px;
+  height: 156px;
+  display: grid;
+  grid-template-rows: 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+button {
+  font-size: 30px;
+}
+button:hover {
+  background-color: olivedrab;
+}
+
+#reset {
+  box-sizing: border-box;
+  width: 95px;
+  height: 40px;
+  border: 1px solid dodgerblue;
+  margin: auto;
+  border-radius: 4px;
+
+  background-color: dodgerblue;
+  color: white;
+  font-size: 20px;
+  cursor: pointer;
+}
+#scores {
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr;
+  width: 300px;
+  height: 80px;
+  margin: 0 auto;
+  text-align: center;
+}
+.item {
+  font-size: 15px;
+  border-bottom: 1px solid red;
+}
+.item:last-child,
+.item:nth-last-child(2),
+.item:nth-last-child(3) {
+  border-bottom: none;
+}
+.item:first-child,
+.item:nth-last-child(2),
+.item:nth-last-child(3),
+.item:nth-last-child(5) {
+  border-right: 1px solid red;
+}
+
+/* Player turn space */
+#print,
+#turn {
+  color: olivedrab;
+  font-size: 20px;
+}
+
+/* Game Instruction Text */
+#ins {
+  color: dodgerblue;
+  font-size: 17px;
+}
