@@ -1,14 +1,15 @@
 # Tic Tac Toe
 
-## Date: /11/16/2021
+#### Date: /11/16/2021
 
-## By: Jane Mingzhen Wang
+#### By: Jane Mingzhen Wang
+#### https://jane-tic-tac-toe.surge.sh/
 
-## Overview
+#### Overview
 
 This project is making a Tic Tac Toe game, a practice of HTML, CSS, and Javascript.
 
-## Requirements
+#### Requirements
 
 - A user should be able to click on different squares to make a move.
 - Every click will alternate between marking an `X` and `O`
